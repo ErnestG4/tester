@@ -1,3 +1,4 @@
-FROM  quay.io/will_garrison/repotest
-RUN apt-get update && apt-get install -y python wget git curl
-RUN echo "check"
+FROM node:argon
+ENV PORTS 80
+RUN echo "testing Node"
+EXPOSE ${PORTS}
